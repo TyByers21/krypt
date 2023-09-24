@@ -35,21 +35,21 @@ const Services = () => (
       <div className="flex-1 flex flex-col justify-start items-center">
         <ServiceCard
           color="bg-[#2952E3]"
-          title="Security gurantee"
+          title="Safe & Secure"
           icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="Your privacy is our primary concern. We maintain safety protocals for the  quality of our products."
         />
         <ServiceCard
           color="bg-[#8945F8]"
           title="Best exchange rates"
           icon={<BiSearchAlt fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="Low exchange fees. We make it simple, easy and affordable to exchange your cryptocurrencies. "
         />
         <ServiceCard
           color="bg-[#F84550]"
           title="Fastest transactions"
           icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="Lightning fast speed. We make it our mission to ensure the fastest transaction speeds available."
         />
       </div>
     </div>

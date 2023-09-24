@@ -13,17 +13,22 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
+      
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-32 cursor-pointer" />
       </div>
-      <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-        {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
-          <NavBarItem key={item + index} title={item} />
-        ))}
-        {/* <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
-          Login
-        </li> */}
-      </ul>
+      <div className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
+        <p className="text-white text-base text-center mx-2 cursor-pointer">
+          <a href="https://coinmarketcap.com/" target="_blank">
+          Market</a></p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer">
+        <a href="https://www.coinbase.com/" target="_blank">Exchange</a></p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer">
+        <a href="https://www.youtube.com/@ConorKenny" target="_blank">Tutorials</a></p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer">
+        <a href="https://shop.ledger.com/?r=c890684e9914" target="_blank"></a>Wallets</p>
+      </div>
+    
       <div className="flex relative">
         {!toggleMenu && (
           <HiMenuAlt4 fontSize={28} className="text-white md:hidden cursor-pointer" onClick={() => setToggleMenu(true)} />
@@ -41,8 +46,10 @@ const Navbar = () => {
               (item, index) => <NavBarItem key={item + index} title={item} classprops="my-2 text-lg" />,
             )}
           </ul>
+          
         )}
       </div>
+      
     </nav>
   );
 };
